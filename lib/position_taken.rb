@@ -1,10 +1,11 @@
-board = [1,2,3,4," ", " ", " "]
-value = gets.strip
-index = value - 1
+#board = [1,2,3,4," ", " ", " "]
+#value = gets.strip
+#index = value - 1
 
-position_taken(board,index)
-  if board[index] == 0
+def position_taken(board,index)
+  if board[index] == "X" or "O"
     true
-  else
+  else board[index] == " " or ""
     false
   end
+end
